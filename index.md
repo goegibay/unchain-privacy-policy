@@ -4,9 +4,21 @@ title: UNCHAIN Privacy Policy / 隱私權政策
 
 # UNCHAIN 隱私權政策
 
-最後更新日期：2026-07-19
+最後更新日期：2026-08-03
 
 本隱私權政策說明 UNCHAIN（以下稱「本應用程式」）如何收集、使用、儲存與保護您的資料。使用本應用程式即表示您同意本政策的內容。
+
+## iOS 版隱私摘要
+
+App Store 上的 iOS 版為完全免費、離線優先版本，與 Android 版的營運方式不同：
+
+- 不含廣告、AdMob、廣告追蹤或 ATT 請求；
+- 不含 Premium、訂閱、應用程式內購買或 StoreKit 商品；
+- 不提供帳號、登入、雲端備份或使用分析；
+- 不會把挑戰、反思或守護者資料傳送到開發者或第三方伺服器；所有內容只儲存在裝置的 App 沙盒內；
+- 可在 App 的設定頁清除全部本機資料，或透過刪除 App 由 iOS 一併移除。
+
+因此，就 Apple 對 App Privacy 的「收集」（資料離開裝置並供開發者或第三方存取）定義而言，iOS 版不收集資料。下列帳號、Supabase、AdMob、Google Play Billing、雲端備份與分析說明僅適用於 Android 版。
 
 ## 1. 我們收集的資料
 
@@ -83,9 +95,21 @@ stevenhuang42195@gmail.com
 
 # UNCHAIN Privacy Policy
 
-Last updated: 2026-07-19
+Last updated: 2026-08-03
 
 This Privacy Policy explains how UNCHAIN ("the App") collects, uses, stores, and protects your data. By using the App, you agree to this policy.
+
+## iOS Privacy Summary
+
+The iOS version distributed through the App Store is a fully free, offline-first edition and differs from the Android version:
+
+- It contains no advertising, AdMob, advertising tracking, or ATT prompt.
+- It contains no Premium tier, subscription, in-app purchase, or StoreKit product.
+- It provides no account, sign-in, cloud backup, or usage analytics.
+- It does not transmit challenge, reflection, or Guardian data to the developer or any third-party server. All content remains in the app's on-device sandbox.
+- You can erase all local data in Settings, or remove it through iOS by deleting the app.
+
+Under Apple's App Privacy definition of collection—where data leaves the device and is accessible to the developer or a third party—the iOS version does not collect data. The account, Supabase, AdMob, Google Play Billing, cloud-backup, and analytics descriptions below apply only to the Android version.
 
 ## 1. Data We Collect
 
