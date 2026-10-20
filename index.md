@@ -4,23 +4,23 @@ title: UNCHAIN Privacy Policy / 隱私權政策
 
 # UNCHAIN 隱私權政策
 
-最後更新日期：2026-08-03
+最後更新日期：2026-10-20
 
 本隱私權政策說明 UNCHAIN（以下稱「本應用程式」）如何收集、使用、儲存與保護您的資料。使用本應用程式即表示您同意本政策的內容。
 
 ## iOS 版隱私摘要
 
-App Store 上的 iOS 版為完全免費、離線優先版本，與 Android 版的營運方式不同：
+iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並可選擇透過 Apple App Store 訂閱 Unchain Core。App 不含廣告、廣告追蹤或 ATT 請求；目前不提供帳號登入或雲端備份。您在 App 輸入的自評、每日行動、反思、私人筆記及照片保存在裝置上的 App 沙盒；本 App 不會主動將這些內容傳送給開發者或應用內第三方服務。您可在「我的 → 資料控制」匯出或清除本機資料。自行匯出、分享及 iOS 系統備份取決於您的操作與裝置設定。
 
-- 不含廣告、AdMob、廣告追蹤或 ATT 請求；
-- 不含 Premium、訂閱、應用程式內購買或 StoreKit 商品；
-- 不提供帳號、登入、雲端備份或使用分析；
-- 不會把挑戰、反思或守護者資料傳送到開發者或第三方伺服器；所有內容只儲存在裝置的 App 沙盒內；
-- 可在 App 的設定頁清除全部本機資料，或透過刪除 App 由 iOS 一併移除。
+訂閱由 Apple StoreKit 處理付款，RevenueCat 協助驗證購買紀錄與啟用訂閱權益。RevenueCat 會收集購買歷史，用於 App 功能（收據驗證、防詐與權益啟用）及訂閱分析（例如訂戶歷史與統計）。目前 App 使用 RevenueCat 產生的匿名識別碼，不把購買紀錄連結至姓名或電子郵件，也不將其用於跨 App 廣告追蹤。訂閱價格、試用資格與扣款資訊以 Apple 購買畫面為準；取消或管理訂閱可使用 Apple 帳號的訂閱設定。
 
-因此，就 Apple 對 App Privacy 的「收集」（資料離開裝置並供開發者或第三方存取）定義而言，iOS 版不收集資料。下列帳號、Supabase、AdMob、Google Play Billing、雲端備份與分析說明僅適用於 Android 版。
+| iOS 收集的資料 | 收集者與用途 | 身分連結／追蹤 |
+| --- | --- | --- |
+| 購買歷史 | RevenueCat；驗證收據、啟用訂閱權益及訂閱分析 | 使用匿名識別碼，不連結至可識別個人的身分；不用於廣告追蹤 |
 
-## 1. 我們收集的資料
+本版本未配置 iOS 的 Supabase 帳號、雲端同步、廣告 SDK 或自家使用事件上傳。以下帳號、Supabase、AdMob、Google Play Billing、雲端備份與一般使用分析的敘述適用於 Android 版。若日後 iOS 的服務或資料處理方式改變，我們會更新本政策及 App Store 隱私標示。
+
+## 1. Android 版收集的資料
 
 | 資料類型 | 說明 | 儲存位置 |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ App Store 上的 iOS 版為完全免費、離線優先版本，與 Android 版�
 
 本應用程式不要求 Android 位置權限，也不會直接收集您的精確位置、聯絡人、相機／相簿內容或裝置上其他應用程式的資料。Google AdMob 仍可能處理 IP 位址並推估大概位置，如上所述。
 
-## 2. 資料如何被使用
+## 2. Android 版資料如何被使用
 
 - **帳號資訊**：用於登入驗證、密碼重設、以及識別您的使用分析資料與帳號設定。
 - **挑戰／習慣資料**：在本機處理，用於計算連續天數、產生統計圖表與重置歷史。**不登入即可使用核心功能**，此時資料不會離開您的裝置。
@@ -44,13 +44,20 @@ App Store 上的 iOS 版為完全免費、離線優先版本，與 Android 版�
 
 ## 3. 第三方服務
 
-本應用程式使用以下第三方服務，這些服務有各自的隱私權政策：
+本應用程式依平台使用以下第三方服務，這些服務有各自的隱私權政策：
+
+**iOS：**
+
+- **RevenueCat**（iOS 訂閱權益驗證與購買分析）：https://www.revenuecat.com/privacy/
+- **Apple StoreKit／App Store**（iOS 訂閱付款）：https://www.apple.com/legal/privacy/
+
+**Android：**
 
 - **Supabase**（帳號驗證與雲端資料庫）：https://supabase.com/privacy
 - **Google AdMob**（廣告服務）：https://policies.google.com/privacy
 - **Google Play 帳單服務**（應用程式內購買）：https://policies.google.com/privacy
 
-## 4. 資料安全
+## 4. Android 版資料安全
 
 - 帳號相關資料與雲端備份透過加密連線（HTTPS/TLS）傳輸至 Supabase。
 - 習慣／挑戰資料預設僅儲存在您的裝置本機儲存空間，並受作業系統的應用程式沙盒機制保護。
@@ -58,7 +65,7 @@ App Store 上的 iOS 版為完全免費、離線優先版本，與 Android 版�
 - 雲端備份以資料列層級安全性（Row Level Security）保護，每位使用者僅能存取自己的備份。
 - 我們不會將您的個人資料出售給第三方。
 
-## 5. 帳號與資料刪除
+## 5. Android 版帳號與資料刪除
 
 您可以隨時在本應用程式中刪除您的帳號：
 
@@ -95,23 +102,23 @@ stevenhuang42195@gmail.com
 
 # UNCHAIN Privacy Policy
 
-Last updated: 2026-08-03
+Last updated: 2026-10-20
 
 This Privacy Policy explains how UNCHAIN ("the App") collects, uses, stores, and protects your data. By using the App, you agree to this policy.
 
 ## iOS Privacy Summary
 
-The iOS version distributed through the App Store is a fully free, offline-first edition and differs from the Android version:
+The iOS version of UNCHAIN offers free daily actions, check-ins and on-device reflection. An optional Unchain Core subscription is available through Apple's App Store. The app has no ads, advertising tracking or App Tracking Transparency prompt. It currently has no account sign-in or cloud backup. Your self-assessments, daily actions, reflections, private notes and photos stay in the app's on-device sandbox. The app does not proactively transmit that content to the developer or in-app third-party services. You can export or erase local data in Profile > Data controls. Sharing, exports and iOS system backups depend on your actions and device settings.
 
-- It contains no advertising, AdMob, advertising tracking, or ATT prompt.
-- It contains no Premium tier, subscription, in-app purchase, or StoreKit product.
-- It provides no account, sign-in, cloud backup, or usage analytics.
-- It does not transmit challenge, reflection, or Guardian data to the developer or any third-party server. All content remains in the app's on-device sandbox.
-- You can erase all local data in Settings, or remove it through iOS by deleting the app.
+Apple StoreKit handles subscription payments. RevenueCat verifies purchase history and enables subscription access. RevenueCat collects purchase history for app functionality (receipt validation, fraud prevention and entitlements) and subscription analytics (such as customer history and aggregate charts). The app currently uses a RevenueCat-generated anonymous identifier. Purchase history is not linked to your name or email address and is not used to track you across apps for advertising. Subscription prices, trial eligibility and billing details appear in Apple's purchase flow; you can manage or cancel through your Apple account's subscription settings.
 
-Under Apple's App Privacy definition of collection—where data leaves the device and is accessible to the developer or a third party—the iOS version does not collect data. The account, Supabase, AdMob, Google Play Billing, cloud-backup, and analytics descriptions below apply only to the Android version.
+| Data collected by the iOS app | Collector and purpose | Identity link / tracking |
+| --- | --- | --- |
+| Purchase history | RevenueCat; receipt validation, subscription access and subscription analytics | Anonymous identifier, not linked to an identifiable person; not used for advertising tracking |
 
-## 1. Data We Collect
+This iOS version does not configure Supabase accounts, cloud sync, advertising SDKs or uploads of first-party usage events. The account, Supabase, AdMob, Google Play Billing, cloud-backup and general usage analytics descriptions below apply to the Android version. We will update this policy and the App Store privacy disclosure if the iOS app's services or data practices change.
+
+## 1. Data Collected by the Android App
 
 | Data type | Purpose | Where it's stored |
 | --- | --- | --- |
@@ -124,7 +131,7 @@ Under Apple's App Privacy definition of collection—where data leaves the devic
 
 The App does not request Android location permission or directly collect your precise location, contacts, camera/photo library content, or data from other apps on your device. Google AdMob may still process IP addresses and infer approximate location as described above.
 
-## 2. How We Use Your Data
+## 2. How the Android App Uses Data
 
 - **Account info**: login authentication, password resets, and linking analytics/settings to your account.
 - **Challenge/habit data**: processed on-device to compute streaks, charts, and reset history. **Core features work without signing in**, in which case this data never leaves your device.
@@ -135,11 +142,18 @@ The App does not request Android location permission or directly collect your pr
 
 ## 3. Third-Party Services
 
+**iOS:**
+
+- **RevenueCat** (iOS subscription entitlement verification and purchase analytics): https://www.revenuecat.com/privacy/
+- **Apple StoreKit / App Store** (iOS subscription payment): https://www.apple.com/legal/privacy/
+
+**Android:**
+
 - **Supabase** (authentication & database): https://supabase.com/privacy
 - **Google AdMob** (advertising): https://policies.google.com/privacy
 - **Google Play Billing** (in-app purchases): https://policies.google.com/privacy
 
-## 4. Data Security
+## 4. Android Data Security
 
 - Account-related data and cloud backups are transmitted to Supabase over encrypted connections (HTTPS/TLS).
 - Challenge/habit data is stored in your device's local app storage by default, protected by the OS app sandbox.
@@ -147,7 +161,7 @@ The App does not request Android location permission or directly collect your pr
 - Cloud backups are protected by row-level security: each user can only access their own backup.
 - We do not sell your personal data to third parties.
 
-## 5. Account & Data Deletion
+## 5. Android Account and Data Deletion
 
 You can delete your account at any time from within the App:
 
