@@ -4,7 +4,7 @@ title: UNCHAIN Privacy Policy / 隱私權政策
 
 # UNCHAIN 隱私權政策
 
-最後更新日期：2026-10-20
+最後更新日期：2026-10-21
 
 本隱私權政策說明 UNCHAIN（以下稱「本應用程式」）如何收集、使用、儲存與保護您的資料。使用本應用程式即表示您同意本政策的內容。
 
@@ -31,7 +31,11 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 | 廣告與裝置資料（例如 IP 位址、廣告識別碼、同意狀態、App 互動與診斷資料） | 用於在取得適用的廣告同意後顯示與衡量 Google AdMob 橫幅廣告、分析及防詐；AdMob 可能由 IP 推估大概位置 | 由 Google User Messaging Platform（UMP）與 AdMob 收集與處理 |
 | 購買紀錄（Premium 解鎖） | 用於驗證與啟用付費功能 | 由 Google Play 帳單服務處理 |
 
-本應用程式不要求 Android 位置權限，也不會直接收集您的精確位置、聯絡人、相機／相簿內容或裝置上其他應用程式的資料。Google AdMob 仍可能處理 IP 位址並推估大概位置，如上所述。
+您可選擇拍攝或匯入進度照片，並加入備註。照片及備註在本應用程式的私人本機空間處理與儲存；此功能不會自動將它們上傳至 UNCHAIN 的進度同步或雲端備份。拍攝與選圖透過正常系統權限或選取畫面進行，由您決定是否允許或選取。
+
+在「資料控制」手動匯出資料時，匯出檔可能包含照片日期、相關資料與備註，即使您未選擇匯出影像本體。影像本體只有在您明確選擇要匯出的照片時才會加入；透過系統分享時，匯出檔會交給您選擇的接收程式。
+
+本應用程式不要求 Android 位置權限，也不會直接收集您的精確位置、聯絡人或裝置上其他應用程式的資料。Google AdMob 仍可能處理 IP 位址並推估大概位置，如上所述。
 
 ## 2. Android 版資料如何被使用
 
@@ -102,7 +106,7 @@ stevenhuang42195@gmail.com
 
 # UNCHAIN Privacy Policy
 
-Last updated: 2026-10-20
+Last updated: 2026-10-21
 
 This Privacy Policy explains how UNCHAIN ("the App") collects, uses, stores, and protects your data. By using the App, you agree to this policy.
 
@@ -129,7 +133,11 @@ This iOS version does not configure Supabase accounts, cloud sync, advertising S
 | Advertising and device data (such as IP address, advertising ID, consent state, app interactions, and diagnostics) | Showing and measuring Google AdMob banner ads after applicable consent, analytics, and fraud prevention; AdMob may infer approximate location from IP | Collected and processed by Google User Messaging Platform (UMP) and AdMob |
 | Purchase records (Premium unlock) | Validating and unlocking paid features | Processed by Google Play Billing |
 
-The App does not request Android location permission or directly collect your precise location, contacts, camera/photo library content, or data from other apps on your device. Google AdMob may still process IP addresses and infer approximate location as described above.
+You may choose to take or import progress photos and add notes. Photos and notes are processed and stored in the App’s private on-device storage; this feature does not automatically upload them to UNCHAIN progress syncing or cloud backup. Taking or selecting photos uses the normal system permission or selection screens, where you decide what to allow or select.
+
+When you manually export data in Data Controls, the export may include photo dates, related information and notes, even if you do not choose to export the image files. Image files are included only when you explicitly select photos for export. When you use system sharing, the export is passed to the receiving app you choose.
+
+The App does not request Android location permission or directly collect your precise location, contacts, or data from other apps on your device. Google AdMob may still process IP addresses and infer approximate location as described above.
 
 ## 2. How the Android App Uses Data
 
