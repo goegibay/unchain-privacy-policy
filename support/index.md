@@ -25,7 +25,7 @@ iOS 版不需要帳號，提供免費的每日行動、簽到與本機反思功�
 
 ## 帳號與資料刪除申請
 
-Android 使用者可從 App 的帳號刪除流程提出要求；若無法使用 App，或要申請處理第三方購買與權益資料，請寄信至 stevenhuang42195@gmail.com，主旨「UNCHAIN 資料刪除申請」。請說明平台、要刪除的資料範圍，以及可取得的帳號電子郵件或 App 使用者識別資訊。我們可能需要確認資料屬於您本人；請勿寄送密碼、驗證碼、金鑰或完整付款卡資料。本機清除不代表遠端帳號或第三方紀錄已刪除；商店交易與訂閱由原商店處理，詳細範圍請見政策。
+Android 使用者可從 App 的帳號刪除流程提出要求。採用「資料控制」畫面的版本，入口為「我的 → 開啟資料控制 → 刪除帳號與資料」；請點選「刪除帳號」並依畫面確認。不同版本的畫面名稱可能不同。若找不到入口、無法使用 App，或要申請處理第三方購買與權益資料，請寄信至 stevenhuang42195@gmail.com，主旨「UNCHAIN 資料刪除申請」。請說明平台、要刪除的資料範圍，以及可取得的帳號電子郵件或 App 使用者識別資訊。我們可能需要確認資料屬於您本人；請勿寄送密碼、驗證碼、金鑰或完整付款卡資料。本機清除不代表遠端帳號或第三方紀錄已刪除；商店交易與訂閱由原商店處理，詳細範圍請見政策。
 
 [查看隱私權政策](../)
 
@@ -54,6 +54,6 @@ The iOS edition requires no account and offers free daily actions, check-ins and
 
 ## Account and data deletion requests
 
-Android users can request deletion through the App’s account deletion flow. If you cannot use the App, or want to request deletion of third-party purchase and access data, email stevenhuang42195@gmail.com with the subject “UNCHAIN data deletion request”. Include your platform, the data you want deleted, and your account email or App user identifier if available. We may need to confirm that the data belongs to you. Do not send passwords, verification codes, keys or complete payment card details. Local erasure does not mean that remote accounts or third-party records have been deleted. The original store handles store transactions and subscriptions; see the policy for scope.
+Android users can request deletion through the App’s account deletion flow. In versions with “Data controls”, go to Profile > Open data controls > Delete account and data, select “Delete account”, and follow the on-screen confirmation. Screen names may differ by version. If you cannot find the option, cannot use the App, or want to request deletion of third-party purchase and access data, email stevenhuang42195@gmail.com with the subject “UNCHAIN data deletion request”. Include your platform, the data you want deleted, and your account email or App user identifier if available. We may need to confirm that the data belongs to you. Do not send passwords, verification codes, keys or complete payment card details. Local erasure does not mean that remote accounts or third-party records have been deleted. The original store handles store transactions and subscriptions; see the policy for scope.
 
 [View the privacy policy](../)

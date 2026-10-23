@@ -74,9 +74,7 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 
 ## 5. Android 版帳號與資料刪除
 
-您可以隨時在本應用程式中刪除您的帳號：
-
-**設定（我的） > 帳號 > 刪除帳號**
+Android 版可從 App 內的帳號刪除入口提出刪除要求。在採用「資料控制」畫面的版本，請前往「我的 → 開啟資料控制 → 刪除帳號與資料」，點選「刪除帳號」並依畫面確認。不同版本的畫面名稱可能不同；若找不到入口或無法使用 App，請依下方「UNCHAIN 帳號與資料刪除頁」的指示提出要求。
 
 帳號刪除流程會要求刪除 Supabase 帳號與相關遠端資料，並處理本機資料清除。遠端刪除是否完成，以流程回報的確認結果為準；若顯示尚待處理或失敗，不能視為遠端資料已刪除。單獨清除本機資料或解除安裝 App 不會刪除遠端帳號。
 
@@ -176,9 +174,7 @@ The App does not request Android location permission or directly collect your pr
 
 ## 5. Android Account and Data Deletion
 
-You can delete your account at any time from within the App:
-
-**Settings (Profile) > Account > Delete Account**
+On Android, you can request deletion through the App’s account deletion flow. In versions with the “Data controls” screen, go to Profile > Open data controls > Delete account and data, select “Delete account”, and follow the on-screen confirmation. Screen names may differ by version. If you cannot find the option or use the App, follow the instructions on the “UNCHAIN account and data deletion page” linked below.
 
 The account deletion flow requests deletion of your Supabase account and associated remote data, and handles local data erasure. Remote deletion is complete only when the flow reports a confirmed result. A pending or failed result does not mean the remote data has been deleted. Erasing local data alone or uninstalling the App does not delete your remote account.
 
