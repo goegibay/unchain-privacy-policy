@@ -22,21 +22,25 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 
 ## 1. Android 版收集的資料
 
+Android versionCode 31（版本名稱 1.2.0 的無廣告版本）不包含或初始化 Google AdMob／UMP，不顯示橫幅廣告，也不提供 App 內廣告隱私選項。仍在使用或測試流通中的較早 Android 版本可能繼續依下述方式使用 UMP／AdMob，直到使用者更新至移除廣告的版本。
+
 | 資料類型 | 說明 | 儲存位置 |
 | --- | --- | --- |
 | 帳號資訊（電子郵件、密碼） | 用於建立帳號、登入與身分驗證 | Supabase（第三方雲端服務），密碼經加密雜湊處理，本應用程式不會明文儲存或讀取您的密碼 |
 | 挑戰／習慣資料（名稱、分類、開始時間、重置紀錄、感想、觸發因素等） | 用於提供核心的習慣追蹤與統計功能 | **預設僅儲存於您的裝置本機**（Room 資料庫）。僅在您登入並使用「雲端備份」功能時，才會上傳（見下列「雲端備份資料」） |
 | 雲端備份資料（選用；含挑戰／習慣資料、守護者進度、XP、護盾與反思日誌內容） | 用於跨裝置備份與還原您的進度 | Supabase（第三方雲端服務），僅在您**主動點選備份或登入帳號**時上傳；以資料列層級權限（RLS）保護，僅您本人可存取 |
 | 使用分析事件（例如：完成 Onboarding、購買 Premium 等操作紀錄） | 用於了解功能使用情況、改善產品體驗 | Supabase（與您的帳號 ID 關聯） |
-| 廣告與裝置資料（例如 IP 位址、廣告識別碼、同意狀態、App 互動與診斷資料） | 用於在取得適用的廣告同意後顯示與衡量 Google AdMob 橫幅廣告、分析及防詐；AdMob 可能由 IP 推估大概位置 | 由 Google User Messaging Platform（UMP）與 AdMob 收集與處理 |
+| 廣告與裝置資料（僅限仍含廣告功能的較早 Android 版本；例如 IP 位址、廣告識別碼、同意狀態、App 互動與診斷資料） | 用於在取得適用的廣告同意後顯示與衡量 Google AdMob 橫幅廣告、分析及防詐；AdMob 可能由 IP 推估大概位置 | 由 Google User Messaging Platform（UMP）與 AdMob 收集與處理 |
 | 購買歷史與 SDK 使用者識別資訊（例如 RevenueCat App User ID） | 驗證購買、啟用付費權益與購買分析 | Google Play 處理付款；RevenueCat 處理購買歷史及權益驗證所需資料 |
 | V3 結構化進度（自評分數、週期／計畫、結構化活動與課程進度） | 登入後同步支援此功能的紀錄 | Supabase；依功能與紀錄類型同步，不包含 V3 自由文字或進度照片 |
+
+Android versionCode 31 的 App 程式未呼叫 RevenueCat 的廣告裝置識別收集或歸因設定 API，也不會將 RevenueCat 的購買或 SDK 使用者識別資訊用於 App 內廣告。RevenueCat 仍會處理購買歷史、App User ID 與提供購買驗證、權益及相關安全作業所需的技術資料；若後台整合或接收方改變，我們會更新本政策與商店揭露。這項版本說明不表示本應用程式或其服務完全不處理任何識別資訊。
 
 您可選擇拍攝或匯入進度照片，並加入備註。照片及備註在本應用程式的私人本機空間處理與儲存；此功能不會自動將它們上傳至 UNCHAIN 的進度同步或雲端備份。拍攝與選圖透過正常系統權限或選取畫面進行，由您決定是否允許或選取。
 
 在「資料控制」手動匯出資料時，匯出檔可能包含照片日期、相關資料與備註，即使您未選擇匯出影像本體。影像本體只有在您明確選擇要匯出的照片時才會加入；透過系統分享時，匯出檔會交給您選擇的接收程式。
 
-本應用程式不要求 Android 位置權限，也不會直接收集您的精確位置、聯絡人或裝置上其他應用程式的資料。Google AdMob 仍可能處理 IP 位址並推估大概位置，如上所述。
+本應用程式不要求 Android 位置權限，也不會直接收集您的精確位置、聯絡人或裝置上其他應用程式的資料。仍含廣告功能的較早 Android 版本中，Google AdMob 仍可能處理 IP 位址並推估大概位置，如上所述；這不適用於已移除 AdMob／UMP 的 Android versionCode 31。
 
 ## 2. Android 版資料如何被使用
 
@@ -45,7 +49,7 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 - **舊版雲端備份資料（選用）**：在提供舊版備份功能的流程中，若您登入帳號並使用「雲端備份／還原」，本應用程式會將挑戰資料與遊戲化進度（含舊版反思日誌內容）上傳至 Supabase 供日後還原；首次登入時若雲端尚無備份，會自動備份一次。
 - **V3 結構化進度同步**：在支援同步的 V3 功能中，登入帳號後，待同步的自評分數、週期／計畫、結構化活動與課程進度可傳送至 Supabase，用於保存與同步進度。這與舊版整份備份不同，V3 同步不包含自由文字、私人筆記或進度照片；並非每種模式或每筆新紀錄都支援同步。
 - **使用分析事件**：用於彙整產品使用統計，協助我們了解哪些功能受歡迎、哪裡需要改善；帳號相關的舊版使用事件會與帳號 ID 關聯。
-- **廣告與裝置資料**：廣告功能依版本與使用流程而異；目前 V3／成長流程不主動載入廣告。在提供廣告的舊版流程中，Google UMP 用於處理適用的同意要求，廣告請求受 Google SDK 的同意狀態控制。已整合的 AdMob SDK 可能處理 IP 位址、廣告識別碼、App 互動與診斷資料，以投放／衡量廣告、分析及防詐；未看到廣告不代表所有 SDK 都不處理資料。提供「廣告隱私選項」的版本可從設定頁開啟；您也可使用裝置系統的廣告隱私設定。
+- **廣告與裝置資料**：Android versionCode 31 已移除 AdMob／UMP，不會載入或顯示 AdMob 廣告，也沒有 App 內「廣告隱私選項」。在仍含廣告功能的較早 Android 版本中，Google UMP 用於處理適用的同意要求，廣告請求受 Google SDK 的同意狀態控制；AdMob 可能處理 IP 位址、廣告識別碼、App 互動與診斷資料，以投放／衡量廣告、分析及防詐。使用較早版本時，未看到廣告不表示所有相關 SDK 都停止處理資料；提供「廣告隱私選項」的較早版本可從設定頁開啟。您也可使用裝置系統的廣告隱私設定。
 - **購買與權益資料**：Google Play 處理 Android 付款，RevenueCat 處理購買歷史與 SDK 使用者識別資訊，用於驗證購買、啟用權益及購買分析。目前可選購 Unchain Core 月／年自動續訂方案；舊版已售出的 Premium 買斷權益依原購買內容保留。價格、期間與資格以付款畫面為準；管理或取消訂閱請使用 Google Play 的訂閱設定。
 
 ## 3. 第三方服務
@@ -60,7 +64,7 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 **Android：**
 
 - **Supabase**（帳號驗證與雲端資料庫）：https://supabase.com/privacy
-- **Google AdMob**（廣告服務）：https://policies.google.com/privacy
+- **Google AdMob／Google UMP**（僅適用仍含廣告功能的較早 Android 版本）：https://policies.google.com/privacy
 - **Google Play 帳單服務**（應用程式內購買與訂閱付款）：https://policies.google.com/privacy
 - **RevenueCat**（Android 購買驗證、權益與購買分析）：https://www.revenuecat.com/privacy/
 
@@ -124,21 +128,25 @@ This iOS version does not configure Supabase accounts, cloud sync, advertising S
 
 ## 1. Data Collected by the Android App
 
+Android versionCode 31 (the ad-free version named 1.2.0) does not include or initialize Google AdMob or UMP, display banner ads, or provide an in-app Ad privacy options entry. Earlier Android versions that remain installed or available to testers may continue to use UMP and AdMob as described below until users update to the ad-free version.
+
 | Data type | Purpose | Where it's stored |
 | --- | --- | --- |
 | Account info (email, password) | Account creation, login, authentication | Supabase (third-party cloud service); passwords are hashed and never stored or read in plain text by the App |
 | Challenge/habit data (name, category, start time, reset records, reflections, triggers) | Core habit-tracking and statistics features | **Stored on your device by default** (local Room database); only uploaded if you sign in and use Cloud Backup (see next row) |
 | Cloud backup data (optional; includes challenge/habit data, guardian progress, XP, shields, and reflection journal content) | Backing up and restoring your progress across devices | Supabase (third-party cloud service); uploaded only when you **actively back up or sign in**; protected by row-level security so only you can access it |
 | Analytics events (e.g. onboarding completed, Premium purchased) | Understand feature usage and improve the product | Supabase (linked to your account ID) |
-| Advertising and device data (such as IP address, advertising ID, consent state, app interactions, and diagnostics) | Showing and measuring Google AdMob banner ads after applicable consent, analytics, and fraud prevention; AdMob may infer approximate location from IP | Collected and processed by Google User Messaging Platform (UMP) and AdMob |
+| Advertising and device data (only in earlier Android versions that still include ads; such as IP address, advertising ID, consent state, app interactions, and diagnostics) | Showing and measuring Google AdMob banner ads after applicable consent, analytics, and fraud prevention; AdMob may infer approximate location from IP | Collected and processed by Google User Messaging Platform (UMP) and AdMob |
 | Purchase history and SDK user identifiers (such as a RevenueCat App User ID) | Purchase validation, paid access and purchase analytics | Google Play handles payment; RevenueCat processes purchase history and data needed for entitlement verification |
 | V3 structured progress (assessment scores, cycles/plans, structured activities and lesson progress) | Syncing supported records after sign-in | Supabase; sync depends on the feature and record type and excludes V3 free text and progress photos |
+
+The Android versionCode 31 app code does not call RevenueCat APIs that collect advertising device identifiers or configure attribution, and it does not use RevenueCat purchase or SDK user identifiers for in-app advertising. RevenueCat still processes purchase history, an App User ID, and technical data needed for purchase validation, entitlements, and related security operations. We will update this policy and the store disclosure if dashboard integrations or recipients change. This version note does not claim that the App or its services process no identifiers at all.
 
 You may choose to take or import progress photos and add notes. Photos and notes are processed and stored in the App’s private on-device storage; this feature does not automatically upload them to UNCHAIN progress syncing or cloud backup. Taking or selecting photos uses the normal system permission or selection screens, where you decide what to allow or select.
 
 When you manually export data in Data Controls, the export may include photo dates, related information and notes, even if you do not choose to export the image files. Image files are included only when you explicitly select photos for export. When you use system sharing, the export is passed to the receiving app you choose.
 
-The App does not request Android location permission or directly collect your precise location, contacts, or data from other apps on your device. Google AdMob may still process IP addresses and infer approximate location as described above.
+The App does not request Android location permission or directly collect your precise location, contacts, or data from other apps on your device. In earlier Android versions that still include ads, Google AdMob may process IP addresses and infer approximate location as described above; this does not apply to Android versionCode 31, which removes AdMob and UMP.
 
 ## 2. How the Android App Uses Data
 
@@ -147,7 +155,7 @@ The App does not request Android location permission or directly collect your pr
 - **Legacy cloud backup data (optional)**: in flows that offer legacy backup, signing in and using Cloud Backup/Restore uploads challenge data and gamification progress (including legacy reflection journals) to Supabase for later restore. On first sign-in, if no cloud backup exists, one backup is created automatically.
 - **V3 structured progress sync**: in V3 features that support sync, pending assessment scores, cycles/plans, structured activities and lesson progress may be sent to Supabase after sign-in to save and sync progress. This is separate from legacy full backups. V3 sync excludes free text, private notes and progress photos; not every mode or new record supports sync.
 - **Analytics events**: product usage statistics to understand which features are popular and where improvements are needed. Account-related legacy usage events are linked to the account ID.
-- **Advertising and device data**: ads vary by version and flow; the current V3/growth flow does not actively load ads. In legacy flows that provide ads, Google UMP handles applicable consent requirements and ad requests are controlled by the Google SDK’s consent state. The integrated AdMob SDK may process IP addresses, advertising IDs, app interactions and diagnostics for ad delivery/measurement, analytics and fraud prevention. Not seeing ads does not mean that every SDK stops processing data. Versions offering “Ad privacy options” provide them in Settings; you can also use the device’s advertising privacy settings.
+- **Advertising and device data**: Android versionCode 31 removes AdMob and UMP, does not load or display AdMob ads, and has no in-app “Ad privacy options” entry. In earlier Android versions that still include ads, Google UMP handles applicable consent requirements and ad requests are controlled by the Google SDK’s consent state. AdMob may process IP addresses, advertising IDs, app interactions and diagnostics for ad delivery/measurement, analytics and fraud prevention. In those earlier versions, not seeing an ad does not mean every related SDK stops processing data; versions offering “Ad privacy options” provide them in Settings. You can also use the device’s advertising privacy settings.
 - **Purchase and access data**: Google Play handles Android payments. RevenueCat processes purchase history and SDK user identifiers for purchase validation, access and purchase analytics. Optional Unchain Core monthly/yearly auto-renewing plans are available; previously sold Premium lifetime access is retained according to the original purchase. Prices, periods and eligibility appear in the purchase flow. Manage or cancel subscriptions in Google Play’s subscription settings.
 
 ## 3. Third-Party Services
@@ -160,7 +168,7 @@ The App does not request Android location permission or directly collect your pr
 **Android:**
 
 - **Supabase** (authentication & database): https://supabase.com/privacy
-- **Google AdMob** (advertising): https://policies.google.com/privacy
+- **Google AdMob / Google UMP** (only in earlier Android versions that still include ads): https://policies.google.com/privacy
 - **Google Play Billing** (in-app purchases and subscription payments): https://policies.google.com/privacy
 - **RevenueCat** (Android purchase validation, access and purchase analytics): https://www.revenuecat.com/privacy/
 
