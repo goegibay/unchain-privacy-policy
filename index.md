@@ -4,7 +4,7 @@ title: UNCHAIN Privacy Policy / 隱私權政策
 
 # UNCHAIN 隱私權政策
 
-最後更新日期：2026-10-22
+最後更新日期：2026-10-25
 
 本隱私權政策說明 UNCHAIN（以下稱「本應用程式」）如何收集、使用、儲存與保護您的資料。使用本應用程式即表示您同意本政策的內容。
 
@@ -110,7 +110,7 @@ stevenhuang42195@gmail.com
 
 # UNCHAIN Privacy Policy
 
-Last updated: 2026-10-22
+Last updated: 2026-10-25
 
 This Privacy Policy explains how UNCHAIN ("the App") collects, uses, stores, and protects your data. By using the App, you agree to this policy.
 

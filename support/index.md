@@ -4,7 +4,7 @@ title: UNCHAIN Support / 使用支援
 
 # UNCHAIN 使用支援
 
-最後更新日期：2026-10-22
+最後更新日期：2026-10-25
 
 需要協助、想回報問題，或對隱私與資料處理有疑問時，請寄信至：
 
@@ -33,7 +33,7 @@ Android 使用者可從 App 的帳號刪除流程提出要求。採用「資料�
 
 # UNCHAIN Support
 
-Last updated: 2026-10-22
+Last updated: 2026-10-25
 
 For help, bug reports, or questions about privacy and data handling, email:
 
