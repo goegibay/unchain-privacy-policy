@@ -34,7 +34,7 @@ Android versionCode 31（版本名稱 1.2.0 的無廣告版本）不包含或初
 | 購買歷史與 SDK 使用者識別資訊（例如 RevenueCat App User ID） | 驗證購買、啟用付費權益與購買分析 | Google Play 處理付款；RevenueCat 處理購買歷史及權益驗證所需資料 |
 | V3 結構化進度（自評分數、週期／計畫、結構化活動與課程進度） | 登入後同步支援此功能的紀錄 | Supabase；依功能與紀錄類型同步，不包含 V3 自由文字或進度照片 |
 
-Android versionCode 31 的 App 程式未呼叫 RevenueCat 的廣告裝置識別收集或歸因設定 API，也不會將 RevenueCat 的購買或 SDK 使用者識別資訊用於 App 內廣告。RevenueCat 仍會處理購買歷史、App User ID 與提供購買驗證、權益及相關安全作業所需的技術資料；若後台整合或接收方改變，我們會更新本政策與商店揭露。這項版本說明不表示本應用程式或其服務完全不處理任何識別資訊。
+Android versionCode 31 的 App 程式未呼叫 RevenueCat 的廣告裝置識別收集或歸因設定 API，也不會將 RevenueCat 的購買或 SDK 使用者識別資訊用於 App 內廣告。RevenueCat 仍會處理購買歷史、App User ID 與提供購買驗證、權益及相關安全作業所需的技術資料；後台整合與下游接收方另依實際配置揭露，其啟用或變更時，我們會更新本政策與商店揭露。這項版本說明不表示本應用程式或其服務完全不處理任何識別資訊。
 
 您可選擇拍攝或匯入進度照片，並加入備註。照片及備註在本應用程式的私人本機空間處理與儲存；此功能不會自動將它們上傳至 UNCHAIN 的進度同步或雲端備份。拍攝與選圖透過正常系統權限或選取畫面進行，由您決定是否允許或選取。
 
@@ -140,7 +140,7 @@ Android versionCode 31 (the ad-free version named 1.2.0) does not include or ini
 | Purchase history and SDK user identifiers (such as a RevenueCat App User ID) | Purchase validation, paid access and purchase analytics | Google Play handles payment; RevenueCat processes purchase history and data needed for entitlement verification |
 | V3 structured progress (assessment scores, cycles/plans, structured activities and lesson progress) | Syncing supported records after sign-in | Supabase; sync depends on the feature and record type and excludes V3 free text and progress photos |
 
-The Android versionCode 31 app code does not call RevenueCat APIs that collect advertising device identifiers or configure attribution, and it does not use RevenueCat purchase or SDK user identifiers for in-app advertising. RevenueCat still processes purchase history, an App User ID, and technical data needed for purchase validation, entitlements, and related security operations. We will update this policy and the store disclosure if dashboard integrations or recipients change. This version note does not claim that the App or its services process no identifiers at all.
+The Android versionCode 31 app code does not call RevenueCat APIs that collect advertising device identifiers or configure attribution, and it does not use RevenueCat purchase or SDK user identifiers for in-app advertising. RevenueCat still processes purchase history, an App User ID, and technical data needed for purchase validation, entitlements, and related security operations. Dashboard integrations and downstream recipients are disclosed according to their actual configuration; if they are enabled or changed, we will update this policy and the store disclosure. This version note does not claim that the App or its services process no identifiers at all.
 
 You may choose to take or import progress photos and add notes. Photos and notes are processed and stored in the App’s private on-device storage; this feature does not automatically upload them to UNCHAIN progress syncing or cloud backup. Taking or selecting photos uses the normal system permission or selection screens, where you decide what to allow or select.
 
