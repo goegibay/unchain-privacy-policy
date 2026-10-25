@@ -18,6 +18,8 @@ iOS 版 UNCHAIN 提供免費的每日行動、簽到與本機反思功能，並�
 | --- | --- | --- |
 | 購買歷史 | RevenueCat；驗證收據、啟用訂閱權益及訂閱分析 | 使用匿名識別碼，不連結至可識別個人的身分；不用於廣告追蹤 |
 
+若要查詢或請求刪除 RevenueCat 代表本 App 處理的 iOS 訂閱／購買相關資料，請透過本政策「聯絡我們」的電子郵件提出。我們會核實足以定位資料的必要資訊，並依適用情況向 RevenueCat 提出資料主體請求。Apple 依法或依其服務條款保留的交易紀錄由 Apple 管理；取消訂閱不等同刪除既有交易紀錄。
+
 本版本未配置 iOS 的 Supabase 帳號、雲端同步、廣告 SDK 或自家使用事件上傳。以下帳號、Supabase、AdMob、Google Play Billing、雲端備份與一般使用分析的敘述適用於 Android 版。若日後 iOS 的服務或資料處理方式改變，我們會更新本政策及 App Store 隱私標示。
 
 ## 1. Android 版收集的資料
@@ -123,6 +125,8 @@ Apple StoreKit handles subscription payments. RevenueCat verifies purchase histo
 | Data collected by the iOS app | Collector and purpose | Identity link / tracking |
 | --- | --- | --- |
 | Purchase history | RevenueCat; receipt validation, subscription access and subscription analytics | Anonymous identifier, not linked to an identifiable person; not used for advertising tracking |
+
+To ask about or request deletion of iOS subscription or purchase-related data that RevenueCat processes for the App, contact us using the email address in “Contact Us” below. We will verify the minimum information needed to locate the data and, where applicable, submit a data subject request to RevenueCat. Apple controls transaction records that it retains under applicable law or its service terms; canceling a subscription does not itself delete existing transaction records.
 
 This iOS version does not configure Supabase accounts, cloud sync, advertising SDKs or uploads of first-party usage events. The account, Supabase, AdMob, Google Play Billing, cloud-backup and general usage analytics descriptions below apply to the Android version. We will update this policy and the App Store privacy disclosure if the iOS app's services or data practices change.
 
